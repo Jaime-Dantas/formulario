@@ -8,10 +8,78 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
   background: #9999ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container{
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, .212);
+}
+
+.image-form{
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  min-height: 100vh;
+  padding: 1rem;
+  background-color: #fde3a7d7;
+  border-radius: 15px 0 0 15px;
 }
+
+.image-form img{
+  width: 31rem;
+  
+}
+
+.form{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: aliceblue;
+  padding: 3rem;
+  border-radius: 0 15px 15px 0;
+}
+
+.titulo-login{
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+/*=== Footer ===*/
+.footer{
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.footer button:hover{
+  background-color: #6b6bf7;  
+}
+
+.footer button a{
+  color: #fff;
+}
+.btn-cadastro{  
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #9999ff;
+}
+
