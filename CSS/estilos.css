@@ -145,3 +145,22 @@ a {
   font-size: 0.8rem;;
 }
 
+@media screen and (max-width: 1270px) {
+  .image-form {
+      display: none;
+  }
+  .container {
+      width: 50%;
+  }
+  .form {
+      width: 100%;
+      border-radius: 10px;
+  }
+}
+
+@media  screen and (max-width: 510px) {
+    .container{
+      width: 90%;
+      height: auto;
+    }
+}
