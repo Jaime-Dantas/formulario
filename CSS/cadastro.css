@@ -53,3 +53,140 @@ a {
   padding: 3rem;
   border-radius: 0 15px 15px 0;
 }
+
+.form-cadastro-cabecalho{
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-btn-cad{
+  display: flex;
+  align-items: center;
+}
+
+.login-btn-cad button{
+  border: none;
+  background-color: #6b6bf7;
+  border-radius: 5px;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+}
+
+.login-btn-cad button:hover{
+  background-color: #9999ff;
+  
+}
+
+.login-btn-cad button a{
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.form-cadastro-cabecalho h1::after{
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #6b6bf7;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px ;
+}
+
+.input-group{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.input-box{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+.input-box input{
+  margin: .06rem 0;
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box input:hover{
+  background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible{
+  outline: 1px solid #6b6bf7;
+}
+
+.input-box input::placeholder{
+  color: #000000be;
+}
+
+.input-box label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000000c0;  
+}
+
+.cadastro-btn button{
+  width: 100%;
+  border: none;
+  background-color: #6b6bf7;
+  padding: 0.62rem;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.93rem;
+  font-weight: 600;
+}
+
+.cadastro-btn button:hover{
+  background-color: #9999ff;
+}
+
+.cadastro-btn button a{
+  
+  font-size: 0.62rem;
+  font-weight: 600;
+}
+
+
+@media screen and (max-width: 1260px) {
+  .image-form {
+      display: none;
+  }
+  .container {
+      width: 50%;
+  }
+  .form {
+      width: 100%;
+      border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  
+  .container{
+    width: 90%;
+    height: auto;
+  }
+  .input-group{
+    flex-direction: column;
+    overflow-y: scroll;
+    flex-wrap: nowrap;
+    max-height: 20rem;
+    padding-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  .login-btn-cad{
+    margin-left: 20px;
+  }
+
+}

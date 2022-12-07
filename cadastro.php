@@ -21,7 +21,7 @@
             </div>
 
             <div class="login-btn-cad">
-              <button><a href="login.html">Login</a></button>
+              <button><a href="login.php"">Login</a></button>
             </div>     
 
           </div>  
@@ -29,37 +29,42 @@
           <div class="input-group"> <!--DIV com todos os Inputs-->
             <div class="input-box">
               <label for="nome">Nome:</label>
-              <input id="nome" type="text" name="nome" placeholder="digite seu nome" required>
+              <input id="nome" type="text" name="nome" placeholder="Digite seu nome" required>
             </div>
             
             <div class="input-box">
               <label for="sobrenome">Sobrenome:</label>
-              <input id="sobrenome" type="text" name="sobrenome" placeholder="digite seu sobrenome" required>
+              <input id="sobrenome" type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
             </div>
             
             <div class="input-box">
               <label for="email">Email:</label>
-              <input id="email" type="email" name="email" placeholder="digite seu email" required>
+              <input id="email" type="email" name="email" placeholder="Digite seu email" required>
             </div>
             
             <div class="input-box">
               <label for="telefone">Telefone:</label>
-              <input id="telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+              <input id="Telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+            </div>            
+                     
+            <div class="input-box">
+              <label for="Gênero">Gênero:</label>
+              <input id="Gênero" type="tel" name="CPF" placeholder="Masc/Femin/Outro" required>
             </div>
             
             <div class="input-box">
               <label for="usuario">Usuario:</label>
-              <input id="usuario" type="text" name="usuario" placeholder="(XX) XXXXX-XXXX" required>
+              <input id="usuario" type="text" name="usuario" placeholder="Escolha seu usuario" >
             </div>
 
             <div class="input-box">
               <label for="senha">Senha:</label>
-              <input id="senha" type="password" name="senha" placeholder="digite sua senha" required>
+              <input id="senha" type="password" name="senha" placeholder="Digite sua senha" >
             </div>
 
             <div class="input-box">
               <label for="csenha">Confime a senha:</label>
-              <input id="csenha" type="password" name="csenha" placeholder="confirme sua senha" required>
+              <input id="csenha" type="password" name="csenha" placeholder="Confirme sua senha" required>
             </div>
 
 
