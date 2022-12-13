@@ -1,6 +1,18 @@
 <?php
   include('controller/servidor.php');
-  
+    if(isset($_POST['usuario']) || isset($_POST['senha'])){
+      if(isset($_POST['usuario']) == 0){
+        echo('Preencha seu usuario!');
+      }else if(isset($_POST['senha']) == 0){
+        echo('Preencha sua senha');
+      } else {
+        $usuario = $mysqli -> real_escape_string($_POST['usuario']);
+        $senha = $mysqli -> real_escape_string($_POST['senha']);
+
+        $sql_code = "SELECT * FROM formulario WHERE "
+
+      }
+    } 
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
