@@ -1,3 +1,7 @@
+<?php
+  include('controller/servidor.php');
+  
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
