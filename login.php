@@ -1,5 +1,5 @@
 <?php
-  include('controller/servidor.php');
+  include('controller/conexao.php');
     if(isset($_POST['usuario']) || isset($_POST['senha'])){
       if(isset($_POST['usuario']) == 0){
         echo('Preencha seu usuario!');
@@ -9,8 +9,23 @@
         $usuario = $mysqli -> real_escape_string($_POST['usuario']);
         $senha = $mysqli -> real_escape_string($_POST['senha']);
 
-        $sql_code = "SELECT * FROM formulario WHERE "
+        $sql_code = "SELECT * FROM usuarios WHERE usuario = '$usuario' AND senha = '$senha'";
+        $sql_query = $mysqli->query($sql_code) or die('falha na conexão SQL' . $mysqli->error);
 
+        $quantidade = $sql_query -> num_rows;
+
+          if($quantidade == 1){
+            $usuario = $sql_query -> fetch_assoc();
+              if(!isset($_SESSION)){
+                session_start();
+              }
+              $_SESSION['usuario'] = $usuario['usuario'];
+              $_SESSION['nome'] = $usuario['nome'];
+              header('Location: painelusuario.php');
+
+          }else{
+            echo 'Falha ao logar';
+          }
       }
     } 
 ?>
@@ -29,7 +44,7 @@
       <img src="img/undraw_login_re_4vu2.svg" alt="login">
     </div>
     <div class="form"> <!--TODO O CONEUDO DO FORM-->
-        <form action="controller/servidor.php" method="POST">
+        <form action="" method="POST">
           <div class="form-login-cabecalho">
             <div class="titulo-login">
               <h1>Login</h1>
@@ -38,11 +53,11 @@
           
           <div class="input-group"> <!--DIV com todos os Inputs-->
             <div class="input-box">
-              <input id="usuario" type="text" name="usuario" placeholder="Entre com o usuario" required>
+              <input id="usuario" type="text" name="usuario" placeholder="Entre com o usuario" >
             </div>
             
             <div class="input-box">
-              <input id="senha" type="password" name="senha" placeholder="digite sua senha" required>
+              <input id="senha" type="password" name="senha" placeholder="digite sua senha" >
             </div>
             
             <div class="input-box">
