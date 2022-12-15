@@ -49,7 +49,7 @@
                      
             <div class="input-box">
               <label for="genero">Gênero:</label>
-              <input id="genero" type="tel" name="CPF" placeholder="Masc/Femin/Outro" required>
+              <input id="genero" type="tel" name="genero" placeholder="Masc/Femin/Outro" required>
             </div>
             
             <div class="input-box">
@@ -64,8 +64,10 @@
 
             <div class="input-box">
               <label for="rsenha">Confime a senha:</label>
-              <input id="rsenha" type="password" name="csenha" placeholder="Confirme sua senha" required>
+              <input id="rsenha" type="password" name="rsenha" placeholder="Digite sua senha" >
             </div>
+
+           
 
 
             

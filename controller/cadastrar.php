@@ -4,9 +4,9 @@ include("conexao.php");
 
 $nome = $mysqli -> real_escape_string(trim($_POST['nome']));
 $sobrenome = $mysqli -> real_escape_string(trim($_POST['sobrenome']));
-$email = $mysqli -> real_escape_string(trim($_POST['email']));
 $telefone = $mysqli -> real_escape_string(trim($_POST['telefone']));
 $genero = $mysqli -> real_escape_string(trim($_POST['genero']));
+$email = $mysqli -> real_escape_string(trim($_POST['email']));
 $usuario = $mysqli -> real_escape_string(trim($_POST['usuario']));
 $senha = $mysqli -> real_escape_string(trim($_POST['senha']));
 $rsenha = $mysqli -> real_escape_string(trim($_POST['rsenha']));

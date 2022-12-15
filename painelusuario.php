@@ -1,5 +1,5 @@
 <?php
- include('<controller/validar.php')
+ include('controller/validar.php')
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
