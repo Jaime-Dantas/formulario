@@ -13,7 +13,7 @@
       <img src="img/undraw_personal_info_re_ur1n.svg" alt="login">
     </div>
     <div class="form"> <!--TODO O CONEUDO DO FORM-->
-        <form action="controller/servidor.php" method="POST">
+        <form action="controller/cadastrar.php" method="POST">
           <div class="form-cadastro-cabecalho">
 
             <div class="titulo-cadastro">
@@ -44,12 +44,12 @@
             
             <div class="input-box">
               <label for="telefone">Telefone:</label>
-              <input id="Telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+              <input id="telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
             </div>            
                      
             <div class="input-box">
-              <label for="Gênero">Gênero:</label>
-              <input id="Gênero" type="tel" name="CPF" placeholder="Masc/Femin/Outro" required>
+              <label for="genero">Gênero:</label>
+              <input id="genero" type="tel" name="CPF" placeholder="Masc/Femin/Outro" required>
             </div>
             
             <div class="input-box">
@@ -63,8 +63,8 @@
             </div>
 
             <div class="input-box">
-              <label for="csenha">Confime a senha:</label>
-              <input id="csenha" type="password" name="csenha" placeholder="Confirme sua senha" required>
+              <label for="rsenha">Confime a senha:</label>
+              <input id="rsenha" type="password" name="csenha" placeholder="Confirme sua senha" required>
             </div>
 
 
