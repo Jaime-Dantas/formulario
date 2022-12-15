@@ -21,7 +21,7 @@ $row = mysqli_fetch_assoc($resultado);
   }
 
 $sql = "INSERT INTO usuarios (nome,sobrenome,email,telefone,genero,usuario,senha,rsenha,data_cadastro)
- VALUES ('$usuario','$sobrenome','$email','$telefone','$genero','$usuario','$senha','$rsenha',NOW())";
+ VALUES ('$nome','$sobrenome','$email','$telefone','$genero','$usuario','$senha','$rsenha',NOW())";
 
   if($mysqli->query($sql)===true){
     $_SESSION['status_cadastro']= true;
