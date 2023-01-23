@@ -8,7 +8,7 @@
 <img src=https://img.shields.io/github/stars/Jaime-Dantas?style=social>
 </p>
 
-  <h3 align="left">:clipboard: Descrição do Projeto</h3>
+  ### 📋 Descrição do Projeto
   <p align="left">  
    Página inicial de acesso e cadastro criados primeiramente com o intuito de estudo e prática, mas podendo ser reciclados para páginas de gerenciamento de úsuarios.
   </p>
